@@ -8,6 +8,7 @@ import './index.less'
 import Header from "./component/Header";
 import Nav from "./component/Nav";
 import './static/css/reset.min.css'
+<<<<<<< HEAD
 import CartHeader from "./component/CartHeader";
 ReactDOM.render(<div>
     <Header/>
@@ -35,3 +36,16 @@ ReactDOM.render(<div className="sort">
 </div>, document.getElementById('root'));
 // registerServiceWorker();
 >>>>>>> hhw
+=======
+
+ReactDOM.render(<HashRouter>
+    <Switch>
+
+        <Route path='/' component={Home}/>
+
+
+
+    </Switch>
+</HashRouter>,window.root);
+
+>>>>>>> f04c1d68a335f7d2f09e8e15492f57cd96eb6b2a
