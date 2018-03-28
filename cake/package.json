@@ -1,0 +1,27 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "ejs": "^2.5.7",
+    "jquery": "^3.3.1",
+    "koa": "^2.5.0",
+    "koa-better-body": "^3.0.4",
+    "koa-bodyparser": "^4.2.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.4",
+    "koa-views-render": "0.0.1",
+    "mysql": "^2.15.0"
+  }
+}

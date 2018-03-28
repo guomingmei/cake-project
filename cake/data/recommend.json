@@ -1,0 +1,197 @@
+[{
+    "goodsId": 1,
+    "type": "hot",
+    "picUrl": "http://static.21cake.com//upload/images/de7f5cade140bd0c5a49cb853b8249f1.jpg",
+    "title": "百利甜情人",
+    "subtitleArr": ["爱尔兰百利甜酒", "新西兰奶油", "云南玫瑰甘露"],
+    "hotkeyArr": ["聚会", "情侣", "人气", "情人节"],
+    "productArr": [{
+        "id": "1",
+        "size": "13x13cm",
+        "suite_amount": "适合3-4人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含5套餐具",
+        "price": "198.00",
+        "spec": "1.0磅",
+        "pound": "1.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/1.00P-full-13.00.jpg",
+        "is_default": "false"
+      },
+      {
+        "id": "2",
+        "size": "15x15cm",
+        "suite_amount": "适合5-6人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含5套餐具",
+        "price": "258.00",
+        "spec": "1.5磅",
+        "pound": "1.50",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/1.50P-full-15.00.jpg",
+        "is_default": "false"
+      },
+      {
+        "id": "3",
+        "size": "17x17cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含10套餐具",
+        "price": "298.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/2.00P-full-17.00.jpg",
+        "is_default": "true"
+      }
+    ],
+    "imgArr": ["http://cs.21cake.com/public/images/98/58/a3/d5a573d3d158235fecb2830c62686a0b.jpg?1495614070#w", "http://static.21cake.com/public/images/d2/05/6d/b34895b2c3186a7067e489e273c912cd.jpg?1488855343#h", "http://static.21cake.com/public/images/f1/9f/65/d1c1d67eebb8c5c0ff20be116af52883.png?1472718235#h", "http://static.21cake.com/public/images/a8/c0/2a/5d11a5a4a3dcd05da73450392b357b3e.jpg?1485049616#w"]
+  },
+  {
+    "goodsId": 2,
+    "type": "hot",
+    "picUrl": "http://static.21cake.com//upload/images/d0e6a2b4a647a736585cd5e50de8234d.jpg",
+    "title": "芒果奶油",
+    "subtitleArr": ["芒果"],
+    "hotkeyArr": ["聚会", "情侣", "人气", "情人节"],
+    "productArr": [{
+        "id": "1",
+        "size": "18x18cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含10套餐具",
+        "price": "198.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/2.00P-full-18.00.jpg",
+        "is_default": "true"
+      },
+      {
+        "id": "2",
+        "size": "23x23cm",
+        "suite_amount": "适合11-12人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含15套餐具",
+        "price": "268.00",
+        "spec": "3.0磅",
+        "pound": "3.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/3.00P-full-23.00.jpg",
+        "is_default": "false"
+      },
+      {
+        "id": "3",
+        "size": "29x29cm",
+        "suite_amount": "适合15-20人分享",
+        "booking_hour_limited": "24",
+        "cutlery_content": "含20套餐具",
+        "price": "398.00",
+        "spec": "5.0磅",
+        "pound": "5.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/5.00P-full-29.00.jpg",
+        "is_default": "false"
+      }
+    ],
+    "imgArr": ["http://static.21cake.com/public/images/e4/67/d0/98156a4bd977e03de9b026919478477f.jpg?1499159091#w", "http://static.21cake.com/public/images/5e/bb/f9/d51356f78038f10e92ccc9a5912e35fb.jpg?1505443523#w", "http://static.21cake.com/public/images/b0/c5/be/06d49a77568479dc5302afd54c42cd6b.jpg?1505445129#w", "http://static.21cake.com/public/images/19/0b/82/34ece49a18d8edcc8263261fb832303a.png?1513153256#w"]
+  },
+  {
+    "goodsId": 3,
+    "type": "cake",
+    "picUrl": "http://static.21cake.com//upload/images/a447e5ccf956dcb889fe44674ebf214f.jpg",
+    "title": "Chinese Date",
+    "subtitleArr": ["枣子", "奶油"],
+    "hotkeyArr": ["聚会", "新品"],
+    "productArr": [{
+        "id": "1",
+        "size": "13x13cm",
+        "suite_amount": "适合3-4人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含5套餐具",
+        "price": "198.00",
+        "spec": "1.0磅",
+        "pound": "1.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/1.00P-full-13.00.jpg",
+        "is_default": "false"
+      },
+      {
+        "id": "2",
+        "size": "17x17cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含10套餐具",
+        "price": "298.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/2.00P-full-17.00.jpg",
+        "is_default": "true"
+      },
+      {
+        "id": "3",
+        "size": "23x23cm",
+        "suite_amount": "适合11-12人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含15套餐具",
+        "price": "458.00",
+        "spec": "3.0磅",
+        "pound": "3.00",
+        "has_spec_img": 1,
+        "img_url": "/themes/wap/img/3.00P-full-23.00.jpg",
+        "is_default": "false"
+      }
+    ],
+    "imgArr": ["http://static.21cake.com/public/images/ba/90/3a/6c3e24d18f5e96b22cf81081b8e5909d.jpg?1516843014#w", "http://static.21cake.com/public/images/3b/25/a3/fd79841480c665cbe24140d0ecf06b06.jpg?1516843019#h", "http://static.21cake.com/public/images/b3/06/5d/10242fd31658dcf020d4564260dfcbc5.jpg?1516843037#h", "http://static.21cake.com/public/images/74/c3/bf/22eb18f37e4724f666962753a8be9e2e.jpg?1516843048#h"]
+  },
+  {
+    "goodsId": 3,
+    "type": "cake",
+    "picUrl": "http://static.21cake.com//upload/images/a447e5ccf956dcb889fe44674ebf214f.jpg",
+    "title": "Chinese Date",
+    "subtitleArr": ["枣子", "奶油"],
+    "hotkeyArr": ["聚会", "新品"],
+    "productArr": [{
+        "id": "1",
+        "size": "13x13cm",
+        "suite_amount": "适合3-4人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含5套餐具",
+        "price": "198.00",
+        "spec": "1.0磅",
+        "pound": "1.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/1.00P-full-13.00.jpg",
+        "is_default": "false"
+      },
+      {
+        "id": "2",
+        "size": "17x17cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含10套餐具",
+        "price": "298.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 1,
+        "img_url": "http://static.21cake.com//themes/wap/img/2.00P-full-17.00.jpg",
+        "is_default": "true"
+      },
+      {
+        "id": "3",
+        "size": "23x23cm",
+        "suite_amount": "适合11-12人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含15套餐具",
+        "price": "458.00",
+        "spec": "3.0磅",
+        "pound": "3.00",
+        "has_spec_img": 1,
+        "img_url": "/themes/wap/img/3.00P-full-23.00.jpg",
+        "is_default": "false"
+      }
+    ],
+    "imgArr": ["http://static.21cake.com/public/images/ba/90/3a/6c3e24d18f5e96b22cf81081b8e5909d.jpg?1516843014#w", "http://static.21cake.com/public/images/3b/25/a3/fd79841480c665cbe24140d0ecf06b06.jpg?1516843019#h", "http://static.21cake.com/public/images/b3/06/5d/10242fd31658dcf020d4564260dfcbc5.jpg?1516843037#h", "http://static.21cake.com/public/images/74/c3/bf/22eb18f37e4724f666962753a8be9e2e.jpg?1516843048#h"]
+  }
+]
