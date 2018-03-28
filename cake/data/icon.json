@@ -1,4 +1,5 @@
 [{
+<<<<<<< HEAD
   "text": "蛋糕",
   "picUrl": "http://static.21cake.com//upload/images/b24fa9c0d277b79493fead122afe8e73.png"
 },
@@ -14,4 +15,21 @@
   "text": "设计师礼品",
   "picUrl": "http://static.21cake.com//upload/images/6d777e1d3aa1681d58ea1640f53e2920.png"
 }
+=======
+    "text": "蛋糕",
+    "picUrl": ""
+  },
+  {
+    "text": "咖啡",
+    "picUrl": ""
+  },
+  {
+    "text": "小切片",
+    "picUrl": ""
+  },
+  {
+    "text": "设计师礼品",
+    "picUrl": ""
+  }
+>>>>>>> hhw
 ]

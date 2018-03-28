@@ -7,6 +7,7 @@ export default class Nav extends Component{
     }
     render(){
         return <div className='footer'>
+<<<<<<< HEAD
            <ul>
                <li><a href=""><i className='iconfont icon-home'></i></a></li>
               <li><a href=""><i className='iconfont icon-fenlei1'></i></a></li>
@@ -21,3 +22,16 @@ export default class Nav extends Component{
         </div>
     }
 }
+=======
+            <ul>
+                <li><a href=""><i className='iconfont icon-home'></i></a></li>
+                <li><a href=""><i className='iconfont icon-fenlei1'></i></a></li>
+                <li><a href=""><i className='iconfont icon-gouwuche'></i></a></li>
+                <li><a href=""><i className='iconfont icon-shequ-active1'></i></a></li>
+                <li><a href=""><i className='iconfont icon-wode'></i></a></li>
+
+            </ul>
+        </div>
+    }
+    }
+>>>>>>> hhw
