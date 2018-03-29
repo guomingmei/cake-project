@@ -37,6 +37,17 @@ function readFile (url) {
   })
 }
 
+function code () {
+  let str = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+  let res = ""
+  for (let i; res.length < 4; i ++) {
+    let num = Math.round(Math.random() * 52)
+    let cur = str[num]
+    if (!res.includes(cur)) res += cur
+  }
+  return res
+}
+
 function rename (oldPath, newPath) {
   return new Promise((resolve, reject) => {
     fs.rename(oldPath, newPath, (err, data) => {
@@ -56,5 +67,6 @@ module.exports = {
   md5,
   SECRET,
   readFile,
-  rename
+  rename,
+  code
 }
