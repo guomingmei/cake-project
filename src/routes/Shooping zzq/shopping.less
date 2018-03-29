@@ -1,0 +1,185 @@
+.shop{
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: .34rem;
+  bottom: .4rem;
+  box-sizing: border-box;
+  font-size: 0;
+  overflow: auto;
+  .temporary{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300%;
+    overflow-y: scroll;
+  }
+  .shop-notice{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .12rem .12rem;
+    margin: .1rem 0;
+    background: rgba(255,244,144,0.7);
+    span{
+      font-size: .12rem;
+      vertical-align: top;
+      margin-top: .03rem;
+      color: #fff;
+      box-sizing: border-box;
+      padding: .04rem;
+      background: #ffdd7c;
+      display: inline-block;
+      float: left;
+    }
+    p{
+      display:block;
+      height: .3rem;
+      font-size: .12rem;
+      color: #442818;
+      overflow: hidden;
+      padding: 0 .06rem;
+    }
+  }
+  .shop-detail{
+    margin-bottom: .15rem;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    height: 2.11rem;
+    .shop-cart{
+      position: relative;
+      height: 1.2rem;
+      width: 100%;
+      box-sizing: border-box;
+      .shop-img{
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.09rem;
+        img{
+          width: 100%;
+        }
+      }
+      .shop-message{
+        vertical-align: top;
+        //margin-left: .04rem;
+        //width: 1.52rem;
+        height: 1.2rem;
+        box-sizing: border-box;
+        display: inline-block;
+        position: absolute;
+        left: 1.4rem;
+        top: 0;
+        padding: 0 .01rem;
+        h2{
+          display: block;
+          padding-top: .2rem;
+          font-size: .12rem;
+          span{
+            display: block;
+            margin-top: .03rem;
+            color: #000;
+          }
+        }
+        span{
+          font-size: .11rem;
+          display: block;
+          color: #ccc;
+          margin: .02rem 0;
+        }
+        p{
+          display: block;
+          font-size: .11rem;
+          color: #8c8c8c;
+          margin-top: .12rem;
+        }
+        .shop-btn{
+          position: absolute;
+          width: .78rem;
+          height: .26rem;
+          bottom: .1rem;
+          right: .1rem;
+          a{
+            font-size: .26rem;
+            width: .26rem;
+            height: .26rem;
+            display: block;
+            line-height: .26rem;
+            text-align: center;
+            color: #000;
+            background: #f0f0f0;
+            float: left;
+          }
+          span{
+            display: block;
+            float: left;
+            width: .26rem;
+            height: .26rem;
+            margin: 0;
+            line-height: .26rem;
+            text-align: center;
+            background: #F7F7F7;
+          }
+        }
+      }
+    }
+    .shop-bottom{
+      width: 100%;
+      height: .46rem;
+      span{
+        display: inline-block;
+        width: .46rem;
+        height: .46rem;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p{
+        vertical-align: top;
+        display: inline-block;
+        line-height: .46rem;
+        font-size: .12rem;
+        padding-left: .1rem;
+      }
+    }
+  }
+}
+.shop-flex{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: .4rem;
+  left: 0;
+  bottom: .4rem;
+  font-size: 0;
+  box-sizing: border-box;
+  .shop-price{
+    display: inline-block;
+    box-sizing: border-box;
+    padding-right: .2rem;
+    background: #fff;
+    width: 80%;
+    h3{
+      text-align: right;
+      padding: .01rem 0;
+    }
+    p{
+      padding: .01rem 0;
+      text-align: right;
+      font-size: .1rem;
+      color: #8c8c8c;
+    }
+  }
+  .deal{
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background: #000;
+    line-height: .4rem;
+    text-align: center;
+    font-size: .12rem;
+    color: #fff;
+  }
+}
