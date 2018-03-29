@@ -1,31 +1,187 @@
-.container{
+.container {
   width: 100%;
 
-  .details-box{
+  .details-box {
     width: 100%;
 
-    .pro-title{
+    .pro-title {
       padding: 0 .25rem;
 
-      h3{
+      h3 {
         font-size: .24rem;
         font-weight: normal;
       }
 
-      span{
+      span {
         font-size: .14rem;
       }
     }
 
-    .price-label{
+    .price-label {
       width: 100%;
 
-      .tpo-price{
+      .top-price {
         font-size: .22rem;
         color: #C69C6D;
         padding-left: .24rem;
         height: .3rem;
         line-height: .3rem;
+      }
+    }
+
+    .pro-details-label {
+      padding: .05rem .24rem;
+
+      a {
+        display: inline-block;
+        line-height: .18rem;
+        color: #D5BFA7;
+        padding: 0 .12rem;
+        border: .01rem solid #D5BFA7;
+        border-radius: 1rem;
+        margin-right: .06rem;
+      }
+    }
+
+    .details-taste {
+      padding: .1rem .24rem 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+        height: .32rem;
+        line-height: .32rem;
+        margin-right: .2rem;
+        margin-bottom: .1rem;
+
+        img {
+          width: .32rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: .1rem;
+        }
+      }
+    }
+
+    .select-card {
+      background: #FFF;
+      margin: 0 .2rem;
+      overflow: hidden;
+      border-radius: .05rem;
+      border: 1px solid #d5d5d5;
+
+      .select-specifications {
+        border-bottom: none;
+        background: #f9f2f4;
+        margin: 0;
+        padding-left: .14rem;
+
+        li {
+          height: .45rem;
+          font-size: .13rem;
+          line-height: .45rem;
+
+          a {
+            display: block;
+            cursor: pointer;
+            color: #442818;
+
+            i {
+              display: inline-block;
+              height: .15rem;
+              width: .1rem;
+              float: right;
+              margin-right: .15rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .details-options-card {
+        margin: .18rem .14rem .08rem;
+        border-bottom: .01rem solid #D2D2D2;
+
+        .details-options {
+          overflow: hidden;
+          width: 100%;
+
+          li {
+            float: left;
+            width: 50%;
+            margin-bottom: .04rem;
+            color: #442618;
+            i {
+              font-size: .2rem;
+              margin-right: .08rem;
+              font-weight: bold;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .store-info {
+      background-color: #fff;
+      margin-bottom: .14rem;
+
+      li {
+        overflow: hidden;
+        margin-bottom: 0.08rem;
+        padding: 0;
+        font-size: 12px;
+        color: #442818;
+
+        .sweetness {
+          height: .15rem;
+          width: auto;
+          display: block;
+          vertical-align: top;
+          float: left;
+          margin-left: .17rem;
+          color: orangered;
+        }
+
+        img {
+          height: .15rem;
+          width: auto;
+          display: block;
+          vertical-align: top;
+          float: left;
+          margin-left: .17rem;
+        }
+
+        span {
+          display: block;
+          vertical-align: top;
+          width: .55rem;
+          text-align: center;
+          margin: 0 .1rem;
+          float: left;
+        }
+
+        div {
+          width: 100%;
+          float: left;
+          margin-left: -1.29rem;
+
+          p {
+            padding-left: 1.29rem;
+            padding-right: .15rem;
+            i {
+              display: inline-block;
+              height: .14rem;
+              width: .14rem;
+              margin-right: .12rem;
+
+              &.active {
+                color: orangered;
+              }
+            }
+
+          }
+        }
       }
     }
 
