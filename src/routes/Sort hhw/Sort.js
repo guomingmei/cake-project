@@ -2,6 +2,7 @@ import React from "react"
 import SortList from "./SortList/SortList"
 import {querySort} from "../../api/sort"
 import "./sort.less"
+import{Link} from 'react-router-dom'
 import Header from "../../component/Header";
 
 export default class Sort extends React.Component {
@@ -11,8 +12,8 @@ export default class Sort extends React.Component {
             step: 0,
             data: [],
             ary: [{zh: "蛋糕", en: "cake"},
-                {zh: "小切片", en: "cut"},
                 {zh: "咖啡", en: "coffee"},
+                {zh: "小切片", en: "cut"},
                 {zh: "设计", en: "design"}]
         }
     }
@@ -40,7 +41,7 @@ export default class Sort extends React.Component {
                                            let data = await querySort(item.en);
                                            this.setState({step: index, data});
                                        }}>
-                                <a>{item.zh}</a>
+                                <Link to={`/detail/${index}`}>{item.zh}</Link>
                             </li>
                         })
                     }

@@ -13,6 +13,7 @@ import Home from "./routes/Home gmm/Home";
 import Sort from "./routes/Sort hhw/Sort";
 import Community from "./routes/Community lyd/Community";
 import Nav from "./component/Nav";
+import SortDetail from "./routes/Sort hhw/SortDetails/SortDetail";
 
 let element = (
     <Provider store={store}>
@@ -23,6 +24,7 @@ let element = (
                 <Route path="/" exact component={Home}/>
                 <Route path="/home" component={Home}/>
                 <Route path="/detail"  component={Sort}/>
+                <Route path="/cakeDetail"  component={SortDetail}/>
                 <Route path="/shopping"  component={Shopping}/>
                 <Route path="/community"  component={Community}/>
                 <Route path="/register"  component={Register}/>
