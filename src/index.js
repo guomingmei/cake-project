@@ -9,6 +9,9 @@ import {HashRouter,Route} from "react-router-dom"
 import store from "./store"
 import "./static/css/reset.min.css"
 import "./static/css/html.css"
+import Home from "./routes/Home gmm/Home";
+import Sort from "./routes/Sort hhw/Sort";
+import Community from "./routes/Community lyd/Community";
 
 let element = (
     <Provider store={store}>
@@ -17,6 +20,9 @@ let element = (
                 {/*<CartTab/>*/}
                 {/*<Shopping/>*/}
                 <Route path="/" exact component={User}/>
+                <Route path="/home" exact component={Home}/>
+                <Route path="/detail" exact component={Sort}/>
+                <Route path="/community" exact component={Community}/>
                 <Route path="/register" exact component={Register}/>
                 <Route path="/register/personal"/>
             </div>
