@@ -104,6 +104,123 @@
   },
   {
     "goodsId": 3,
+    "type": "hot",
+    "picUrl": "/uploads/hot3.jpg",
+    "title": "Strawberry Fool",
+    "smallTitle": "卡百利",
+    "text": ["/草莓配奶油，从王室，前往温布尔登的雨季/"],
+    "subtitleArr": ["红颜草莓，糖度>8%"],
+    "hotkeyArr": ["聚会", "情侣", "童趣", "人气"],
+    "price": "268.00",
+    "productArr": [{
+        "id": 1,
+        "size": "18x18cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含10套餐具",
+        "price": "268.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 1,
+        "img_url": "/uploads/cake-18.jpg",
+        "is_default": true
+      },
+      {
+        "id": 2,
+        "size": "24x24cm",
+        "suite_amount": "适合11-12人分享",
+        "booking_hour_limited": "6",
+        "cutlery_content": "含15套餐具",
+        "price": "398.00",
+        "spec": "3.0磅",
+        "pound": "3.00",
+        "has_spec_img": 1,
+        "img_url": "/uploads/cake-24.jpg",
+        "is_default": false
+      },
+      {
+        "id": 3,
+        "size": "27x27cm",
+        "suite_amount": "适合15-20人分享",
+        "booking_hour_limited": "24",
+        "cutlery_content": "含20套餐具",
+        "price": "958.00",
+        "spec": "5.0磅",
+        "pound": "5.00",
+        "has_spec_img": 1,
+        "img_url": "/uploads/cake-27.jpg",
+        "is_default": false
+      }
+    ],
+    "imgArr": ["/uploads/hot3-1.jpg", "/uploads/hot3-2.jpg", "/uploads/hot3-3.jpg"]
+  },
+  {
+    "goodsId": 4,
+    "type": "hot",
+    "picUrl": "/uploads/hot4.jpg",
+    "title": "Black and White Chocolate Mousse",
+    "smallTitle": "（彼尔德）黑白巧克力慕斯",
+    "text": ["撒粉款【黑白巧克力慕斯蛋糕】为整块，不切分"],
+    "subtitleArr": [],
+    "hotkeyArr": ["聚会", "情侣", "童趣"],
+    "price": "298.00",
+    "productArr": [{
+        "id": 1,
+        "size": "13x13cm",
+        "suite_amount": "适合3-4人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含5套餐具",
+        "price": "198.00",
+        "spec": "1.0磅",
+        "pound": "1.00",
+        "has_spec_img": 0,
+        "img_url": "",
+        "is_default": false
+      },
+      {
+        "id": 2,
+        "size": "17x17cm",
+        "suite_amount": "适合7-8人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含10套餐具",
+        "price": "298.00",
+        "spec": "2.0磅",
+        "pound": "2.00",
+        "has_spec_img": 0,
+        "img_url": "",
+        "is_default": true
+      },
+      {
+        "id": 3,
+        "size": "23x23cm",
+        "suite_amount": "适合11-12人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含15套餐具",
+        "price": "458.00",
+        "spec": "3.0磅",
+        "pound": "3.00",
+        "has_spec_img": 0,
+        "img_url": "",
+        "is_default": false
+      },
+      {
+        "id": 4,
+        "size": "30x30cm",
+        "suite_amount": "适合15-20人分享",
+        "booking_hour_limited": "5",
+        "cutlery_content": "含20套餐具",
+        "price": "750.00",
+        "spec": "5.0磅",
+        "pound": "5.00",
+        "has_spec_img": 0,
+        "img_url": "",
+        "is_default": false
+      }
+    ],
+    "imgArr": ["/uploads/hot4-1.jpg", "/uploads/hot4-2.jpg"]
+  },
+  {
+    "goodsId": 5,
     "type": "cake",
     "picUrl": "/uploads/cake1.jpg",
     "title": "Chinese Date",
@@ -155,7 +272,7 @@
     "imgArr": ["/uploads/cake1-1.jpg", "/uploads/cake2-1.jpg"]
   },
   {
-    "goodsId": 4,
+    "goodsId": 6,
     "type": "cake",
     "picUrl": "/uploads/cake2.jpg",
     "title": "Black and White Chocolate Mousse",
@@ -207,7 +324,7 @@
     "imgArr": ["/uploads/cake2-1.jpg", "/uploads/cake2-2.jpg"]
   },
   {
-    "goodsId": 5,
+    "goodsId": 7,
     "type": "cut",
     "picUrl": "/uploads/cut1.jpg",
     "title": "Chestnut Cream",
@@ -232,7 +349,7 @@
     "imgArr": ["/uploads/cut1-1.jpg", "/uploads/cut1-2.jpg"]
   },
   {
-    "goodsId": 6,
+    "goodsId": 8,
     "type": "cut",
     "picUrl": "/uploads/cut2.jpg",
     "title": "Heartfelt Wish",
@@ -257,7 +374,7 @@
     "imgArr": ["/uploads/cut2-1.jpg", "/uploads/cut2-2.jpg", "/uploads/cut2-2.jpg"]
   },
   {
-    "goodsId": 7,
+    "goodsId": 9,
     "type": "cut",
     "picUrl": "/uploads/cut3.jpg",
     "title": "Pine Stone Cowboy",
@@ -282,7 +399,7 @@
     "imgArr": ["/uploads/cut3-1.jpg", "/uploads/cut3-2.jpg"]
   },
   {
-    "goodsId": 8,
+    "goodsId": 10,
     "type": "coffee",
     "picUrl": "/uploads/coffee1.jpg",
     "title": "Yirgacheffe Coffee",
@@ -307,7 +424,7 @@
     "imgArr": ["/uploads/coffee1-1.jpg", "/uploads/coffee1-2.jpg"]
   },
   {
-    "goodsId": 9,
+    "goodsId": 11,
     "type": "coffee",
     "picUrl": "/uploads/coffee2.jpg",
     "title": "Brazil Coffee",
@@ -332,7 +449,7 @@
     "imgArr": ["/uploads/coffee2-1.jpg", "/uploads/coffee2-2.jpg", "/uploads/coffee2-3.jpg"]
   },
   {
-    "goodsId": 10,
+    "goodsId": 12,
     "type": "coffee",
     "picUrl": "/uploads/coffee3.jpg",
     "title": "Brazil Coffee",
@@ -369,7 +486,7 @@
     "imgArr": ["/uploads/coffee3-1.jpg", "/uploads/coffee3-2.jpg"]
   },
   {
-    "goodsId": 11,
+    "goodsId": 13,
     "type": "coffee",
     "picUrl": "/uploads/coffee4.jpg",
     "title": "Brazil Coffee",
@@ -394,7 +511,7 @@
     "imgArr": ["/uploads/coffee4-1.jpg", "/uploads/coffee4-2.jpg"]
   },
   {
-    "goodsId": 12,
+    "goodsId": 14,
     "type": "design",
     "picUrl": "/uploads/design1.jpg",
     "title": "Candle",
@@ -419,7 +536,7 @@
     "imgArr": ["/uploads/design1-1.jpg", "/uploads/design1-2.jpg", "/uploads/design1-3.jpg"]
   },
   {
-    "goodsId": 13,
+    "goodsId": 15,
     "type": "design",
     "picUrl": "/uploads/design2.jpg",
     "title": "Candle",
@@ -444,7 +561,7 @@
     "imgArr": ["/uploads/design1-1.jpg", "/uploads/design1-2.jpg", "/uploads/design1-3.jpg"]
   },
   {
-    "goodsId": 14,
+    "goodsId": 16,
     "type": "design",
     "picUrl": "/uploads/design3.jpg",
     "title": "Kraft book",
@@ -469,7 +586,7 @@
     "imgArr": []
   },
   {
-    "goodsId": 15,
+    "goodsId": 17,
     "type": "design",
     "picUrl": "/uploads/design4.jpg",
     "title": "Music box",
