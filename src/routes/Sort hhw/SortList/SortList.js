@@ -1,15 +1,23 @@
 import React from "react"
 import {NavLink} from 'react-router-dom';
+import {querySort} from "../../../api/sort";
 import "./SortList.less"
 
 export default class SortList extends React.Component {
     constructor() {
-        super()
+        super();
+        this.state={data:[]}
     }
-
+ async componentWillMount(){
+     let{location:{pathname}}=this.props;
+     let reg=/([a-zA-Z]+)/g;
+     let detailList=pathname.match(reg)[1]||'cake';
+    let data = await querySort(detailList);
+    this.setState({data});
+}
     render() {
-        let {data} = this.props;
-        return <div className="list-pro-box">
+        let {data}=this.state;
+        {return data.length?( <div className="list-pro-box">
             <div className="list-box">
                 <ul>
                     {
@@ -42,7 +50,7 @@ export default class SortList extends React.Component {
                     }
                 </ul>
             </div>
-        </div>
+        </div>):null}
     }
 }
 

@@ -37,10 +37,10 @@ export default class Home extends Component{
     </section>
     <section className='cake'>
         <ul>
-            <li><Link to='/detail/0'><img src={require('../../static/image/cakef.png')} alt=""/><span>蛋糕</span></Link></li>
-            <li><Link to='detail/1'><img src={require('../../static/image/cakes.png')} alt=""/><span>咖啡</span></Link></li>
-            <li><Link to='detail/2'><img src={require('../../static/image/caker.png')}alt=""/><span>小切块</span></Link></li>
-            <li><a href=""><img src={require('../../static/image/fly.png')} alt=""/><span>企业专区</span></a></li>
+            <li><Link to="/detail/cake"><img src={require('../../static/image/cakef.png')} alt=""/><span>蛋糕</span></Link></li>
+            <li><Link to="/detail/coffee"><img src={require('../../static/image/cakes.png')} alt=""/><span>咖啡</span></Link></li>
+            <li><Link to="/detail/cut"><img src={require('../../static/image/caker.png')}alt=""/><span>小切块</span></Link></li>
+            <li><Link to="/detail/design"><img src={require('../../static/image/fly.png')} alt=""/><span></span></Link></li>
 
         </ul>
     </section>
@@ -55,14 +55,14 @@ export default class Home extends Component{
             {
                this.state.homeData.map((item,index)=>{
                    return  <li key={index}>
-                       <a href="">
+                       <Link to={`/detail/${item.goodsId}`}>
                            <img src={`http://localhost:8080${item.picUrl}`} alt=""/>
                            <p className='textFirst'>{item.smallTitle}<span className='price'>{item.price}</span><span className='weight'>元/2.0磅</span></p>
                            <p className='textSecond'>{item.subtitleArr
 
                            }<a href=""><i className='iconfont icon-gouwuche1'></i></a></p>
 
-                       </a>
+                       </Link>
 
                    </li>
                })
