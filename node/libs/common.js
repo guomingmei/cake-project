@@ -37,6 +37,18 @@ function readFile (url) {
   })
 }
 
+function writeFile (url, data) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(url, data, 'utf-8', (err, data) => {
+      if (!err) {
+        resolve(data)
+      } else {
+        reject(err)
+      }
+    })
+  })
+}
+
 function code () {
   let str = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
   let res = ""
@@ -68,5 +80,6 @@ module.exports = {
   SECRET,
   readFile,
   rename,
-  code
+  code,
+  writeFile
 }

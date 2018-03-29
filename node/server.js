@@ -75,7 +75,9 @@ router.get('/api/center', async(ctx, next) => {
   if (!ctx.session['sess_id']) {
     ctx.body = {status: "failure"}
   } else {
-    ctx.body = {status: "success"}
+    let res = await common.readFile('./data/user.json')
+    let arr = JSON.parse(res)
+    ctx.body = {status: "success", phone: arr[0].num}
   }
 })
 
@@ -104,6 +106,11 @@ router.post('/api/num', async(ctx, next) => {
         count = 0
         ctx.body = {message: '验证码成功',status: "success"}
         ctx.session['sess_id'] = num
+        let res = await common.readFile('./data/user.json')
+        let arr = JSON.parse(res)
+        arr.unshift({num})
+        let data = JSON.stringify(arr)
+        await common.writeFile('./data/user.json', data)
       }
     }else {
       // 验证码填写错误
