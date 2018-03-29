@@ -71,6 +71,14 @@ router.get('/', async (ctx, next) => {
   let res = await common.readFile('./test.html')
   ctx.body = res
 })
+router.get('/api/center', async(ctx, next) => {
+  if (!ctx.session['sess_id']) {
+    ctx.body = {status: "failure"}
+  } else {
+    ctx.body = {status: "success"}
+  }
+})
+
 router.post('/api/num', async(ctx, next) => {
   // 验证码要匹配，时间匹配
   let {msg, num} = ctx.request.body
@@ -95,6 +103,7 @@ router.post('/api/num', async(ctx, next) => {
       }else {
         count = 0
         ctx.body = {message: '验证码成功',status: "success"}
+        ctx.session['sess_id'] = num
       }
     }else {
       // 验证码填写错误
