@@ -24,7 +24,8 @@ let element = (
                 <Route path="/" exact component={Home}/>
                 <Route path="/home" component={Home}/>
                 <Route path="/detail"  component={Sort}/>
-                <Route path="/cakeDetail"  component={SortDetail}/>
+                {/*<Route path="/cakeDetail"  component={SortDetail}/>*/}
+                <Route path="/SortDetail"  component={SortDetail}/>
                 <Route path="/shopping"  component={Shopping}/>
                 <Route path="/community"  component={Community}/>
                 <Route path="/register"  component={Register}/>

@@ -2,6 +2,7 @@ import React from "react"
 import {NavLink} from 'react-router-dom';
 import {querySort} from "../../../api/sort";
 import "./SortList.less"
+import SortDetail from '../SortDetails/SortDetail'
 
 export default class ListFirst extends React.Component {
     constructor() {
@@ -22,8 +23,9 @@ export default class ListFirst extends React.Component {
                 <ul>
                     {
                         data.map((item, index) => {
+                            console.log(item);
                             return <li key={index}>
-                                <NavLink to="/SortDetail" data={data[index]}>
+                                <NavLink to={`/SortDetail?type=${item.type}&goodId=${item.goodsId}`}  data={data[index]}>
                                     <div className="list-pro-content">
                                         <a href="" title="庞贝">
                                             <div className="label">
@@ -50,7 +52,10 @@ export default class ListFirst extends React.Component {
                     }
                 </ul>
             </div>
+
         </div>):null}
+
+
     }
 }
 
