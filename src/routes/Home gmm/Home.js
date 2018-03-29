@@ -1,33 +1,30 @@
 import React,{Component} from 'react';
 import Banner from "../../component/Banner";
 import './home.less'
-
 import {samll,homeDetail,textDetail} from '../../api/icon'
 import Nav from "../../component/Nav";
 import Header from "../../component/Header";
+
 export default class Home extends Component{
     constructor(props){
         super(props);
-        this.state={bannerData:[],homeData:[],homeList:[]}
+        this.state={data:[],homeData:[],homeList:[]}
     }
     async componentWillMount(){
-        let data=await samll();
+        
+        let Bannerdata=await samll();
         let homeData=await homeDetail();
         let textList=await textDetail();
-           let homeList=textList.splice(0,5);
-        console.log(homeList);
-        this.setState({bannerData:data,homeData,homeList});
+        let homeList=textList.splice(0,5);
+        this.setState({data:Bannerdata,homeData,homeList});
     }
     render(){
         return <div className='home'>
             <section className="navContainer">
-
                 <Header/>
             </section>
-
-
-<div>
-    <Banner data={this.state.bannerData} auto={2000}/>
+<div className='banner'>
+    <Banner data={this.state.data} auto={2000}/>
     <section className='buyer'>
         <ul>
             <li><i className='iconfont icon-xin'></i>新人首单赠小切块</li>
@@ -45,39 +42,31 @@ export default class Home extends Component{
         </ul>
     </section>
     <section className='cakeDetail'>
-
         <h3>
             <span className='people'>人气</span>
             <span className='more'><a href="javascript:;">更多></a></span>
         </h3>
         <ul>
-
             {
                this.state.homeData.map((item,index)=>{
                    return  <li key={index}>
-                       <a href="">
+                       <a href="javascript:;">
                            <img src={`http://localhost:8080${item.picUrl}`} alt=""/>
                            <p className='textFirst'>{item.smallTitle}<span className='price'>{item.price}</span><span className='weight'>元/2.0磅</span></p>
                            <p className='textSecond'>{item.subtitleArr
 
-                           }<a href=""><i className='iconfont icon-gouwuche1'></i></a></p>
-
+                           }<a href="javascript:;"><i className='iconfont icon-gouwuche1'></i></a></p>
                        </a>
-
                    </li>
                })
             }
-
-
         </ul>
     </section>
     <section className='home-text'>
         <p>廿一客·活动</p>
     </section>
     <section className='home-new'>
-
         <a href="">
-
             <div className='home-second'>
                 <p>新客权益</p>
                 <p>点击查看</p>
@@ -85,7 +74,6 @@ export default class Home extends Component{
             </div>
             <div className='home-third'>
                 <img src={require('../../static/image/nianyike.jpg')} alt=""/>
-
             </div>
         </a>
     </section>
@@ -102,7 +90,6 @@ export default class Home extends Component{
                     </a>
                 })
             }
-
 
 
         </ul>
