@@ -1,5 +1,5 @@
 
-
+import axios from './index.js'
 //请求数据的接口
 
 export let getCartDetail = () => {
