@@ -3,6 +3,7 @@ import {connect} from "react-redux"
 import propTypes from "prop-types"
 import {postRegister} from "../../api/icon";
 import "./register.less"
+import Header from "../../component/Header";
 
 class Register extends Component {
     constructor(props) {
@@ -13,8 +14,12 @@ class Register extends Component {
     static defaultProps = {};
 
     render() {
+
         let {check, second} = this.state;
         return <div className="register">
+            <section className="navContainer">
+                <Header/>
+            </section>
             <div className="register-box">
                 <input type="number" className="register-phone" placeholder="手机号码" ref="phone"/>
                 <input type="text" className="register-pass" placeholder="短信验证码(发送时，不能输入)" ref="code"

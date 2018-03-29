@@ -30,7 +30,7 @@ export default class Home extends Component{
     <Banner data={this.state.bannerData} auto={2000}/>
     <section className='buyer'>
         <ul>
-            <li><i className='iconfont icon-xin'></i>新人首单赠小切块</li>
+            <li><i className='iconfont icon-xin'></i>首单赠小切块</li>
             <li><i className='iconfont icon-xin'></i>满百包邮</li>
             <li><i className='iconfont icon-xin'></i>千万用户选择</li>
         </ul>
