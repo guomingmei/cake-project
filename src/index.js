@@ -1,48 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {HashRouter, Switch, Route, Redirect} from 'react-router-dom';
-import {Provider} from 'react-redux';
-import Home from "./routes/Home gmm/Home";
-import './index.less'
-import Header from "./component/Header";
-import Nav from "./component/Nav";
-import './static/css/reset.min.css'
-import CartHeader from "./component/CartHeader";
-import Sort from './routes/Sort hhw/Sort';
-ReactDOM.render(
-    <HashRouter>
-        <Switch>
-            <Route path='/' component={Home} exact/>   
-            <Route path='/home' component={Home} exact/>   
-            <Route path='/detail' component={Sort} />   
-        </Switch>
-    </HashRouter>
-    ,window.root);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Provider} from "react-redux"
+import CartTab from "./component/CartTab"
+import Shopping from "./routes/Shooping zzq/Shopping"
+import User from "./routes/User zzq/User"
+import Register from "./routes/User zzq/Register"
+import {HashRouter,Route} from "react-router-dom"
+import store from "./store"
+import "./static/css/reset.min.css"
+import "./static/css/html.css"
 
-/*
-ReactDOM.render(<div>
-    <Header/>
-    <Home/>
-    <Nav/>
-</div>,window.root);
+let element = (
+    <Provider store={store}>
+        <HashRouter>
+            <div style={{width:"100%",height:"100%"}}>
+                {/*<CartTab/>*/}
+                {/*<Shopping/>*/}
+                <Route path="/" exact component={User}/>
+                <Route path="/register" exact component={Register}/>
+                <Route path="/register/personal"/>
+            </div>
+        </HashRouter>
+    </Provider>
+);
 
-import './static/css/reset.min.css';
-import './static/css/index.less';
-// import './static/css/bootstrap.css';
-// import "./sort.less"
-
-
-// import App from './App';
-import Sort from "./routes/Sort hhw/Sort"
-import Header from "./component/Header";
-import Nav from "./component/Nav";
-
-// import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(<div className="sort">
-    <Header/>
-    <Sort/>
-    <Nav/>
-</div>, document.getElementById('root'));
-// registerServiceWorker();
-*/
+ReactDOM.render(element, document.getElementById('root'));
