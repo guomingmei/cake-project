@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Banner from "../../component/Banner";
 import './home.less'
-
+import {Link,Route}from 'react-router-dom'
 import {samll,homeDetail,textDetail} from '../../api/icon'
 import Nav from "../../component/Nav";
 import Header from "../../component/Header";
@@ -37,9 +37,9 @@ export default class Home extends Component{
     </section>
     <section className='cake'>
         <ul>
-            <li><a href=""><img src={require('../../static/image/cakef.png')} alt=""/><span>蛋糕</span></a></li>
-            <li><a href=""><img src={require('../../static/image/cakes.png')} alt=""/><span>咖啡</span></a></li>
-            <li><a href=""><img src={require('../../static/image/caker.png')}alt=""/><span>小切块</span></a></li>
+            <li><Link to='/detail/0'><img src={require('../../static/image/cakef.png')} alt=""/><span>蛋糕</span></Link></li>
+            <li><Link to='detail/1'><img src={require('../../static/image/cakes.png')} alt=""/><span>咖啡</span></Link></li>
+            <li><Link to='detail/2'><img src={require('../../static/image/caker.png')}alt=""/><span>小切块</span></Link></li>
             <li><a href=""><img src={require('../../static/image/fly.png')} alt=""/><span>企业专区</span></a></li>
 
         </ul>
