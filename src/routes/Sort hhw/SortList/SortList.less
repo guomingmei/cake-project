@@ -1,93 +1,84 @@
 .list-pro-box {
   width: 100%;
+  background: #ffffff;
 
   .list-box {
     padding-left: .05rem;
     padding-right: .2rem;
-    margin-top: .5rem;
-    ul {
-      overflow: hidden;
-      //margin-bottom: .2rem;
 
-      li {
-        display: inline-block;
-        width: 50%;
-        //float: left;
+    li {
+      display: inline-block;
+      width: 50%;
 
-        .list-pro-content {
-          padding-left: .15rem;
-          //width: 100%;
-          margin: 0 auto;
-          position: relative;
+      .list-pro-content {
+        padding-left: .15rem;
+        margin: 0 auto;
+        position: relative;
 
-          a {
-            display: block;
-            overflow: hidden;
+        a {
+          display: block;
+          overflow: hidden;
 
-            .label{
-              position: absolute;
-              top: .15rem;
-              width: .4rem;
+          .label {
+            position: absolute;
+            top: .15rem;
+            width: .4rem;
 
-              img{
-                width: 100%;
-              }
-            }
-
-            .list-pro-img {
+            img {
               width: 100%;
-              img {
-                width: 100%;
-              }
             }
+          }
 
-            h3 {
-              font-size: .13rem;
-              line-height: .15rem;
-              font-weight: normal;
+          .list-pro-img {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+
+          h3 {
+            font-size: .13rem;
+            line-height: .15rem;
+            font-weight: normal;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #442818;
+
+            span {
+              font-size: .12rem;
+              display: block;
               width: 100%;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
-              color: #442818;
-
-              span {
-                font-size: 12px;
-                display: block;
-                width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-              }
             }
-
-            .price{
-              color: #BB9772;
-              display: block;
-              margin-top: .05rem;
-            }
-
           }
 
-          .cart-add{
+          .price {
+            color: #BB9772;
             display: block;
-            width: 14%;
-            padding: 5%;
-            position: absolute;
-            padding-top: 20px;
-            right: 0;
-            bottom: -3%;
+            margin-top: .05rem;
+          }
 
-            img{
-              vertical-align: bottom;
-              display: inline-block;
-              width: .19rem;
-              height: .19rem;
-            }
+        }
+
+        .cart-add {
+          display: block;
+          padding: .08rem;
+          position: absolute;
+          right: 0;
+          bottom: -.06rem;
+
+          img {
+            vertical-align: bottom;
+            display: inline-block;
+            width: .19rem;
+            height: .19rem;
           }
         }
       }
-    ;
     }
   }
 }
