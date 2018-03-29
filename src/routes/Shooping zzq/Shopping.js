@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import propTypes from "prop-types"
 import {Link} from "react-router-dom"
 import "./shopping.less"
+import Header from "../../component/Header";
 
 class Shopping extends Component {
     constructor(props){
@@ -17,6 +18,9 @@ class Shopping extends Component {
     render(){
         let {price,num}  = this.state;
         return <div>
+            <section className="navContainer">
+                <Header/>
+            </section>
             <div className="shop">
                 <div className="temporary">
                     {/*公告栏*/}

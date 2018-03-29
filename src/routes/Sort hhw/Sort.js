@@ -2,6 +2,7 @@ import React from "react"
 import SortList from "./SortList/SortList"
 import {querySort} from "../../api/sort"
 import "./sort.less"
+import Header from "../../component/Header";
 
 export default class Sort extends React.Component {
     constructor() {
@@ -23,9 +24,12 @@ export default class Sort extends React.Component {
     }
 
     render() {
+
         let {step, data, ary} = this.state;
         return <div className="sort">
-
+            <section className="navContainer">
+                <Header/>
+            </section>
             {/* 商品的分类*/}
             <div className="products-list-nav">
                 <ul className="list-nav">

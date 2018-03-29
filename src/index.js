@@ -12,6 +12,7 @@ import "./static/css/html.css"
 import Home from "./routes/Home gmm/Home";
 import Sort from "./routes/Sort hhw/Sort";
 import Community from "./routes/Community lyd/Community";
+import Nav from "./component/Nav";
 
 let element = (
     <Provider store={store}>
@@ -19,13 +20,16 @@ let element = (
             <div style={{width:"100%",height:"100%"}}>
                 {/*<CartTab/>*/}
                 {/*<Shopping/>*/}
-                <Route path="/" exact component={User}/>
-                <Route path="/home" exact component={Home}/>
-                <Route path="/detail" exact component={Sort}/>
-                <Route path="/community" exact component={Community}/>
-                <Route path="/register" exact component={Register}/>
+                <Route path="/" exact component={Home}/>
+                <Route path="/home" component={Home}/>
+                <Route path="/detail"  component={Sort}/>
+                <Route path="/shopping"  component={Shopping}/>
+                <Route path="/community"  component={Community}/>
+                <Route path="/register"  component={Register}/>
                 <Route path="/register/personal"/>
+                <Nav/>
             </div>
+
         </HashRouter>
     </Provider>
 );
