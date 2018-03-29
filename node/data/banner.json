@@ -1,0 +1,21 @@
+[{
+  "picUrl": "/uploads/banner1.jpg",
+  "imgArr": [
+    "/uploads/banner1-1.jpg", "/uploads/banner1-2.jpg", "/uploads/banner1-3.jpg"
+  ]
+}, {
+  "picUrl": "/uploads/banner2.jpg",
+  "imgArr": [
+    "/uploads/banner2-1.jpg", "/uploads/banner2-2.jpg", "/uploads/banner2-3.jpg"
+  ]
+}, {
+  "picUrl": "/uploads/banner3.jpg",
+  "imgArr": [
+    "/uploads/banner3-1.jpg", "/uploads/banner3-2.jpg", "/uploads/banner3-3.jpg"
+  ]
+}, {
+  "picUrl": "/uploads/banner4.jpg",
+  "imgArr": [
+    "/uploads/banner4-1.jpg", "/uploads/banner4-2.jpg", "/uploads/banner4-3.jpg"
+  ]
+}]

@@ -41,7 +41,7 @@ export default class Sort extends React.Component {
                                            let data = await querySort(item.en);
                                            this.setState({step: index, data});
                                        }}>
-                                <Link to={`/detail/${index}`}>{item.zh}</Link>
+                                <Link to={`/${index}`}>{item.zh}</Link>
                             </li>
                         })
                     }
