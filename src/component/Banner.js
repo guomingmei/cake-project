@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import ReactSwipe from 'react-swipe';
 import './banner.less'
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 export default class Banner extends Component{
     constructor(props){
@@ -45,8 +46,11 @@ export default class Banner extends Component{
                         }
                     }}>
             {data.map((item, index) => {
+                console.log(item);
                 return <div key={index}>
-                    <img src={`http://localhost:8080${item.picUrl}`} alt=""/>
+                    <Link to={`/SortDetail?type=hot&goodsId=${item.goodsId}`}>
+
+                        <img src={`http://localhost:8080${item.picUrl}`} alt=""/></Link>
                 </div>;
             })}
         </ReactSwipe>

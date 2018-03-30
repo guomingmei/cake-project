@@ -1,0 +1,170 @@
+.userInfo {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: .46rem;
+  overflow: auto;
+  .user-scroll {
+    .user-context {
+      position: relative;
+      width: 100%;
+      height: 80vw;
+      box-sizing: border-box;
+      padding: 0 .5rem;
+      border-bottom: 1px solid #fff;
+      .user-back {
+        box-sizing: border-box;
+        background: url("http://static.21cake.com//upload/images/b52624cd131b935e3c5da646d55e8979.jpg") no-repeat;
+        background-size: 200% 100%;
+        background-position-x: -2.34rem;
+        z-index: 1;
+        margin-left: -.5rem;
+        width: 100vw;
+        height: 100%;
+        filter: blur(3px);
+      }
+      .user-info {
+        position: absolute;
+        top: 0;
+        left: 0.5rem;
+        bottom: 0;
+        right: 0.5rem;
+        margin: auto;
+        height: .4rem;
+        line-height: .4rem;
+        font-size: .14rem;
+        font-weight: 700;
+        text-align: center;
+        background: #fbfbfb;
+        z-index: 999;
+        color: #000;
+        .user-head {
+          background: url("./ico_member.png") no-repeat;
+          background-color: #fff;
+          background-size: contain;
+          box-shadow: 0 0 .01rem .01rem #f0f0f0;
+          position: absolute;
+          bottom: 0;
+          left: .08rem;
+          width: .5rem;
+          height: .5rem;
+          border-radius: 50%;
+          border: .03rem solid #fff;
+        }
+      }
+    }
+    //优惠
+    .discount {
+      position: relative;
+      z-index: 99;
+      width: 100%;
+      height: .6rem;
+      background: #ffffff;
+      font-size: 0;
+      a {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: .12rem;
+        width: 50%;
+        height: .6rem;
+        text-align: center;
+        color: #a7a7a7;
+
+        &:nth-child(1):after {
+          position: absolute;
+          right: 0;
+          top: -50%;
+          content: '';
+          height: 200%;
+          transform: scaleY(.5);
+          border-right: .005rem solid #ccc;
+        }
+        span {
+          color: #000;
+          font-size: .14rem;
+          display: block;
+          line-height: .3rem;
+        }
+      }
+    }
+    //功能列表
+    .userInfo-list {
+      margin-top: .2rem;
+      height: 100%;
+      width: 100%;
+      margin-bottom: .2rem;
+      a{
+        &:before{
+          font-size: .16rem;
+          padding-right: .1rem;
+        }
+        width: 100%;
+        height: .4rem;
+        display: block;
+        box-sizing: border-box;
+        background: #fff;
+        font-size: .14rem;
+        color: #000;
+        line-height: .4rem;
+        padding-left: .2rem;
+        i{
+          float: right;
+          margin-right: .1rem;
+          margin-left: .1rem;
+          color: #000;
+        }
+      }
+    }
+    .user-message {
+      width: 100%;
+      a {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: .4rem;
+        background: #fff;
+        position: relative;
+        padding-left: 0.2rem;
+        line-height: .4rem;
+        color: #000;
+        font-size: .14rem;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: 200%;
+          transform: scaleX(.5);
+          border-top: .005rem solid #ececec;
+        }
+        &:after {
+          font-size: .14rem;
+          color: #000;
+        }
+        i {
+          float: right;
+          margin-right: .1rem;
+          margin-left: .1rem;
+          color: #000;
+        }
+        span {
+          float: right;
+          color: #8c8c8c;
+        }
+      }
+      .user-phone {
+        line-height: .4rem;
+        color: #c0c0c0;
+        font-size: .12rem;
+        text-align: center;
+        margin-top: .1rem;
+        box-shadow: 0 0 .001rem .001rem #ccc;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  }
+}

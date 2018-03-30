@@ -21,7 +21,7 @@ export default class ListFouth extends React.Component {
             <div className="list-box">
                 <div className='ListNav'style={{width:'110%',height:'.5rem',backgroundColor:'floralwhite',overflow:'hidden',paddingBottom:".05rem"}}>
                     <p style={{color:'#442818',textAlign:'center',paddingTop:".1rem",fontSize:'.15rem'}}>设计师礼物</p>
-                    <p style={{color:'#D5BFA7',textAlign:'center'}}>挂耳咖啡</p>
+                    <p style={{color:'#D5BFA7',textAlign:'center'}}>设计师礼品专区</p>
                 </div>
                 <ul>
                     {
@@ -44,8 +44,8 @@ export default class ListFouth extends React.Component {
                                             <span className="price">¥{item.productArr[0].price}/个</span>
 
                                         </a>
-                                        <a href="javascript:;" className="cart-add" name="cart-add_728" data-id="728">
-                                            <img src="http://static.21cake.com//themes/wap/img/list-cart.png"/>
+                                        <a href="javascript:;" className="cart-add" name="cart-add_728" data-id="728" style={{color:'#442818'}}>
+                                            <i className='iconfont icon-gouwuche' style={{color:'UserInfo',fontSize:'.2rem',fontWeight:'bold'}}></i>
                                         </a>
                                     </div>
                                 </NavLink>

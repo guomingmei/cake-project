@@ -3,6 +3,7 @@ import {connect} from "react-redux"
 import propTypes from "prop-types"
 import {Link} from "react-router-dom"
 import "./user.less"
+import Header from "../../component/Header";
 
 class User extends Component {
     constructor(props){
@@ -15,7 +16,14 @@ class User extends Component {
 
     };
     render(){
+        let {history}=this.props;
       return <div className="user">
+          <section className="navContainer">
+              <Header/>
+              <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
+
+              </i>
+          </section>
           <div>
               <div className="user-context">
                   <div className="user-back">

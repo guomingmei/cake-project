@@ -4,7 +4,8 @@ import propTypes from "prop-types"
 import {Link} from "react-router-dom"
 import "./shopping.less"
 import Header from "../../component/Header";
-
+import Nav from "../../component/Nav";
+import '../../component/nav.less'
 class Shopping extends Component {
     constructor(props){
         super(props);
@@ -75,6 +76,9 @@ class Shopping extends Component {
                     下单
                 </div>
             </div>
+            <section>
+             <Nav/>
+            </section>
         </div>
     }
 

@@ -3,6 +3,8 @@ import './community.less'
 import Mycom from '../../component/Mycom'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
+import Nav from "../../component/Nav";
+import '../../component/nav.less'
 class Community extends React.Component{
     constructor(){
         super()
@@ -29,7 +31,9 @@ class Community extends React.Component{
 
             <span className='title'>3月1日</span>
             <a href="/api/community"><Mycom/></a>
-
+            <section>
+                <Nav/>
+            </section>
         </div>
     }
 }

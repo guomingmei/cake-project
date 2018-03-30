@@ -8,7 +8,8 @@ import ListFirst from "./SortList/ListFirst";
 import ListSecond from "./SortList/ListSecond";
 import ListThird from "./SortList/ListThird";
 import ListFour from "./SortList/ListFouth";
-
+import Nav from "../../component/Nav";
+import '../../component/nav.less'
 export default class Sort extends React.Component {
     constructor() {
         super();
@@ -79,6 +80,9 @@ export default class Sort extends React.Component {
                 <Route path='/detail/coffee' component={ListThird}></Route>
                 <Route path='/detail/design' component={ListFour}></Route>
             </Switch>
+            <section>
+               <Nav/>
+            </section>
         </div>
     }
 }

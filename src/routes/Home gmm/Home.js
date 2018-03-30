@@ -4,6 +4,7 @@ import './home.less'
 import {Link,Route}from 'react-router-dom'
 import {samll,homeDetail,textDetail} from '../../api/icon'
 import Nav from "../../component/Nav";
+import '../../component/nav.less';
 import Header from "../../component/Header";
 export default class Home extends Component{
     constructor(props){
@@ -13,8 +14,8 @@ export default class Home extends Component{
     async componentWillMount(){
         let data=await samll();
         let homeData=await homeDetail();
-        let textList=await textDetail();
-           let homeList=textList.splice(0,5);
+        let  homeList=await textDetail();
+
         console.log(homeList);
         this.setState({bannerData:data,homeData,homeList});
     }
@@ -115,7 +116,11 @@ export default class Home extends Component{
 
                 <Nav/>
             </section>
-
+<section>
+    <Nav/>
+</section>
         </div>
     }
 }
+
+

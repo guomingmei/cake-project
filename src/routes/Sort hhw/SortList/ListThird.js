@@ -44,8 +44,8 @@ export default class ListThird extends React.Component {
                                             <span className="price">¥{item.productArr[0].price}/个</span>
 
                                         </a>
-                                        <a href="javascript:;" className="cart-add" name="cart-add_728" data-id="728">
-                                            <img src="http://static.21cake.com//themes/wap/img/list-cart.png"/>
+                                        <a href="javascript:;" className="cart-add" name="cart-add_728" data-id="728" style={{color:'#442818'}}>
+                                            <i className='iconfont icon-gouwuche' style={{color:'UserInfo',fontSize:'.2rem',fontWeight:'bold'}}></i>
                                         </a>
                                     </div>
                                 </NavLink>

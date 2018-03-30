@@ -12,7 +12,7 @@ import "./static/css/html.css"
 import Home from "./routes/Home gmm/Home";
 import Sort from "./routes/Sort hhw/Sort";
 import Community from "./routes/Community lyd/Community";
-import Nav from "./component/Nav";
+import UserInfo from './routes/User zzq/UserInfo'
 import SortDetail from "./routes/Sort hhw/SortDetails/SortDetail";
 
 let element = (
@@ -29,8 +29,10 @@ let element = (
                 <Route path="/shopping"  component={Shopping}/>
                 <Route path="/community"  component={Community}/>
                 <Route path="/register"  component={Register}/>
+                <Route path="/user"  component={User}/>
+                <Route path="/userInfo"  component={UserInfo}/>
                 <Route path="/register/personal"/>
-                <Nav/>
+
             </div>
 
         </HashRouter>
