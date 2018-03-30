@@ -40,7 +40,7 @@ export default class Home extends Component{
             <li><Link to="/detail/cake"><img src={require('../../static/image/cakef.png')} alt=""/><span>蛋糕</span></Link></li>
             <li><Link to="/detail/coffee"><img src={require('../../static/image/cakes.png')} alt=""/><span>咖啡</span></Link></li>
             <li><Link to="/detail/cut"><img src={require('../../static/image/caker.png')}alt=""/><span>小切块</span></Link></li>
-            <li><Link to="/detail/design"><img src={require('../../static/image/fly.png')} alt=""/><span></span></Link></li>
+            <li><Link to="/detail/design"><img src={require('../../static/image/fly.png')} alt=""/><span>礼物</span></Link></li>
 
         </ul>
     </section>

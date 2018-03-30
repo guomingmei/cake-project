@@ -18,8 +18,13 @@ export default class ListFirst extends React.Component {
     }
     render() {
         let {data}=this.state;
+
         {return data.length?( <div className="list-pro-box">
             <div className="list-box">
+                <div className='ListNav'style={{width:'110%',height:'.5rem',backgroundColor:'floralwhite',overflow:'hidden',paddingBottom:".05rem"}}>
+                    <p style={{color:'#442818',textAlign:'center',paddingTop:".1rem",fontSize:'.15rem'}}>蛋糕</p>
+                    <p style={{color:'#D5BFA7',textAlign:'center'}}>55g，6种口味</p>
+                </div>
                 <ul>
                     {
                         data.map((item, index) => {
