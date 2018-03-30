@@ -6,24 +6,25 @@ import "./SortList.less"
 export default class SortList extends React.Component {
     constructor() {
         super();
-        this.state={data:[]}
+        this.state={data:[],type:""}
     }
  async componentWillMount(){
      let{location:{pathname}}=this.props;
      let reg=/([a-zA-Z]+)/g;
      let detailList=pathname.match(reg)[1]||'cake';
     let data = await querySort(detailList);
-    this.setState({data});
-}
+    this.setState({data,type:detailList});
+     console.log(data);
+ }
     render() {
-        let {data}=this.state;
+        let {data,type}=this.state;
         {return data.length?( <div className="list-pro-box">
             <div className="list-box">
                 <ul>
                     {
                         data.map((item, index) => {
-                            return <li key={index}>
-                                <NavLink to="/SortDetail" data={data[index]}>
+                            return <li key={index} >
+                                <NavLink to="/SortDetail?id=${index}&type=${type}"  >
                                     <div className="list-pro-content">
                                         <a href="" title="庞贝">
                                             <div className="label">

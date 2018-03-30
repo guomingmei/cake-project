@@ -55,7 +55,8 @@ export default class Home extends Component{
             {
                this.state.homeData.map((item,index)=>{
                    return  <li key={index}>
-                       <Link to={`/detail/${item.goodsId}`}>
+                       <Link to={`/SortDetail?type=hot&goodsId=${item.goodsId}`}>
+
                            <img src={`http://localhost:8080${item.picUrl}`} alt=""/>
                            <p className='textFirst'>{item.smallTitle}<span className='price'>{item.price}</span><span className='weight'>元/2.0磅</span></p>
                            <p className='textSecond'>{item.subtitleArr

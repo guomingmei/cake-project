@@ -37,12 +37,15 @@ export default class Sort extends React.Component {
     }
 
     render() {
-
+ let {history}=this.props;
         let {cakeData,cutData,coffeeData,designData} = this.state;
 
         return <div className="sort">
             <section className="navContainer">
                 <Header/>
+                <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
+
+                </i>
             </section>
             {/* 商品的分类*/}
             <div className="products-list-nav">

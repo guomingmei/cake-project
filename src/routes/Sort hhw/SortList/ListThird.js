@@ -27,7 +27,7 @@ export default class ListThird extends React.Component {
                     {
                         data.map((item, index) => {
                             return <li key={index}>
-                                <NavLink to="/SortDetail" data={data[index]}>
+                                <NavLink to={`/SortDetail?type=${item.type}&goodsId=${item.goodsId}`} data={data[index]}>
                                     <div className="list-pro-content">
                                         <a href="" title="庞贝">
                                             <div className="label">

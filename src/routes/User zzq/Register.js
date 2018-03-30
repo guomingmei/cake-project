@@ -14,11 +14,14 @@ class Register extends Component {
     static defaultProps = {};
 
     render() {
-
+ let {history}=this.props;
         let {check, second} = this.state;
         return <div className="register">
             <section className="navContainer">
                 <Header/>
+                <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
+
+                </i>
             </section>
             <div className="register-box">
                 <input type="number" className="register-phone" placeholder="手机号码" ref="phone"/>

@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import {querySort} from "../../../api/sort";
 import "./SortList.less"
 
-export default class ListFour extends React.Component {
+export default class ListFouth extends React.Component {
     constructor() {
         super();
         this.state={data:[]}
@@ -20,14 +20,14 @@ export default class ListFour extends React.Component {
         {return data.length?( <div className="list-pro-box">
             <div className="list-box">
                 <div className='ListNav'style={{width:'110%',height:'.5rem',backgroundColor:'floralwhite',overflow:'hidden',paddingBottom:".05rem"}}>
-                    <p style={{color:'#442818',textAlign:'center',paddingTop:".1rem",fontSize:'.15rem'}}>礼品</p>
-                    <p style={{color:'#D5BFA7',textAlign:'center'}}>设计师礼品专区</p>
+                    <p style={{color:'#442818',textAlign:'center',paddingTop:".1rem",fontSize:'.15rem'}}>设计师礼物</p>
+                    <p style={{color:'#D5BFA7',textAlign:'center'}}>挂耳咖啡</p>
                 </div>
                 <ul>
                     {
                         data.map((item, index) => {
                             return <li key={index}>
-                                <NavLink to="/SortDetail" data={data[index]}>
+                                <NavLink to={`/SortDetail?type=${item.type}&goodsId=${item.goodsId}`} data={data[index]}>
                                     <div className="list-pro-content">
                                         <a href="" title="庞贝">
                                             <div className="label">

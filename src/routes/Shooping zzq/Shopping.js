@@ -16,10 +16,14 @@ class Shopping extends Component {
     };
 
     render(){
+        let {history}=this.props;
         let {price,num}  = this.state;
         return <div>
             <section className="navContainer">
                 <Header/>
+                <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
+
+                </i>
             </section>
             <div className="shop">
                 <div className="temporary">
@@ -63,6 +67,7 @@ class Shopping extends Component {
             </div>
             <div className="shop-flex">
                 <div className="shop-price">
+
                     <h3>￥566.00</h3>
                     <p>商品</p>
                 </div>
