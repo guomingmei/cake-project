@@ -1,19 +1,25 @@
 import React,{Component} from "react"
 import {connect} from "react-redux"
 import propTypes from "prop-types"
+import {getCenter} from "../../api/icon";
 import "./userinfo.less"
+import Nav from "../../component/Nav";
 
 class UserInfo extends Component {
     constructor(props){
         super(props);
-        this.state = {}
+        this.state = {phone:{}}
     }
 
     static defaultProps = {
-
     };
-
+     async componentWillMount(){
+         let phone = await getCenter();
+         console.log(phone);
+         this.setState({phone})
+     }
     render(){
+         let {phone} = this.state;
      return (
          <div className="userInfo">
              <div className="user-scroll">
@@ -23,7 +29,9 @@ class UserInfo extends Component {
                      <a className="user-info">
                          <div className="user-head">
                          </div>
-                         注册/登陆
+                         {
+                             phone.status==="success"?phone.phone:null
+                         }
                      </a>
                  </div>
                  <div className="discount">
@@ -66,6 +74,7 @@ class UserInfo extends Component {
                      </a>
                  </div>
              </div>
+             <Nav/>
          </div>
      )
     }

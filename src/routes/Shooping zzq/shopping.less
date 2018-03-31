@@ -56,17 +56,25 @@
     box-sizing: border-box;
     padding: 0 .2rem;
     height: 2.11rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     .shop-cart{
       position: relative;
       height: 1.2rem;
       width: 100%;
       box-sizing: border-box;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
       .shop-img{
         display: inline-block;
-        width: 1.2rem;
-        height: 1.09rem;
+        width: 1.3rem;
+        height: .9rem;
+        margin-top: .2rem;
         img{
           width: 100%;
+          height: 100%;
         }
       }
       .shop-message{
@@ -84,6 +92,9 @@
           display: block;
           padding-top: .2rem;
           font-size: .12rem;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
           span{
             display: block;
             margin-top: .03rem;
@@ -102,33 +113,34 @@
           color: #8c8c8c;
           margin-top: .12rem;
         }
-        .shop-btn{
-          position: absolute;
-          width: .78rem;
+      }
+      .shop-btn{
+        position: absolute;
+        width: .78rem;
+        height: .26rem;
+        bottom: .1rem;
+        right: .1rem;
+        a{
+          font-size: .26rem;
+          width: .26rem;
           height: .26rem;
-          bottom: .1rem;
-          right: .1rem;
-          a{
-            font-size: .26rem;
-            width: .26rem;
-            height: .26rem;
-            display: block;
-            line-height: .26rem;
-            text-align: center;
-            color: #000;
-            background: #f0f0f0;
-            float: left;
-          }
-          span{
-            display: block;
-            float: left;
-            width: .26rem;
-            height: .26rem;
-            margin: 0;
-            line-height: .26rem;
-            text-align: center;
-            background: #F7F7F7;
-          }
+          display: block;
+          line-height: .26rem;
+          text-align: center;
+          color: #000;
+          background: #f0f0f0;
+          float: left;
+        }
+        span{
+          display: block;
+          float: left;
+          width: .26rem;
+          height: .26rem;
+          margin: 0;
+          line-height: .26rem;
+          text-align: center;
+          background: #F7F7F7;
+          font-size: .12rem;
         }
       }
     }
@@ -161,9 +173,6 @@
   height: .5rem;
   left: 0;
   bottom: .65rem;
-
-
-
   font-size: 0;
   box-sizing: border-box;
   .shop-price{
@@ -176,10 +185,10 @@
     height: .58rem;
     h3{
       text-align: right;
-      padding: .01rem 0;
+      padding: .05rem 0;
     }
     p{
-      padding: .06rem 0;
+      padding: .05rem 0;
       text-align: right;
       font-size: .1rem;
       color: #8c8c8c;

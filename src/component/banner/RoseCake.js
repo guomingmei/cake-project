@@ -4,6 +4,7 @@ import {samll} from "../../api/icon";
 import {withRouter} from 'react-router-dom'
 import Nav from "../Nav";
 import Header from "../Header";
+
 class RoseCake extends Component{
     constructor(props){
         super(props);
@@ -17,7 +18,7 @@ class RoseCake extends Component{
     }
     render(){
         console.log(this.props);
-        let {match: {params}} = this.props,
+        let {match: {params},history} = this.props,
             customId = params['id'];
 
         let {RoseData}=this.state;
@@ -25,13 +26,16 @@ class RoseCake extends Component{
         return (<div>{RoseData.length?(<div>
             {
                 RoseData[customId].imgArr.map((item,index)=>{
-                    return <img src={`http://localhost:8080${item}`} style={{width:'100%'}} alt="" key={index}/>
+                    return <img src={`http://localhost:8080${item}`} style={{width:'100%',paddingTop: '.3rem',paddingBottom:'.5rem'}} alt="" key={index}/>
                 })
             }
         </div>):null}
-        <section>
+        <section className='rose' style={{position:"relative"}}>
             <Header/>
             <Nav/>
+            <i className='iconfont icon-fanhui' style={{position:'fixed',top:'0.09rem',left:'.2rem',zIndex: '999'}} onClick={()=>{history.goBack(-1)}}>
+
+            </i>
         </section>
 
         </div>)

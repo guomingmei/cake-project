@@ -4,6 +4,8 @@ import propTypes from "prop-types"
 import {Link} from "react-router-dom"
 import "./user.less"
 import Header from "../../component/Header";
+import Nav from "../../component/Nav";
+import {getCenter} from "../../api/icon";
 
 class User extends Component {
     constructor(props){
@@ -58,7 +60,15 @@ class User extends Component {
                   </a>
               </div>
           </div>
+          <Nav/>
       </div>
+    }
+
+    async componentWillMount(){
+        let phone = await getCenter();
+        if (phone.status==="success"){
+            this.props.history.replace("/userInfo")
+        }
     }
 }
 

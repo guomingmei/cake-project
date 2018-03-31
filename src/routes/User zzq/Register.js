@@ -4,6 +4,7 @@ import propTypes from "prop-types"
 import {postRegister} from "../../api/icon";
 import "./register.less"
 import Header from "../../component/Header";
+import Nav from "../../component/Nav";
 
 class Register extends Component {
     constructor(props) {
@@ -20,14 +21,12 @@ class Register extends Component {
         return <div className="register">
             <section className="navContainer">
                 <Header/>
-                <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
-
+                <i className='iconfont icon-fanhui' onClick={()=>{this.props.history.goBack()}}>
                 </i>
             </section>
             <div className="register-box">
                 <input type="number" className="register-phone" placeholder="手机号码" ref="phone"/>
-                <input type="text" className="register-pass" placeholder="短信验证码(发送时，不能输入)" ref="code"
-                       onChange={this.verification}/>
+                <input type="text" className="register-pass" placeholder="短信验证码(发送时，不能输入)" ref="code" onChange={this.verification}/>
                 <a href="javascript:;" ref="landInfo" className="landInfo"
                    onClick={this.code}>{check ? "发送验证码" : `${second}秒`}</a>
                 <a href="javascript:;" ref="land" onClick={this.fall}>登陆</a>
@@ -38,6 +37,7 @@ class Register extends Component {
                 <div className="register-weChat">
                 </div>
             </div>
+            <Nav/>
         </div>
     }
 
@@ -49,10 +49,12 @@ class Register extends Component {
         //正则匹配手机号
         let reg = /^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/;
         //发送请求 当传过来的值为undefined时候不进行判断
-        let phoneCode = check && reg.test(phone.value) ? await postRegister(phone.value, code.value) : null;
-        console.log(phoneCode);
+        let phoneCode = check && reg.test(phone.value) ? await postRegister(phone.value) : null;
         //判断是否输入手机号||60秒之后就可以再次请求验证
         if (check && reg.test(phone.value) && phoneCode.verificat) {
+            //给后台发送手机号
+            // let codeNum = await postRegister({num:phone.value});
+            console.log(["发送验证码的请求回来了",phoneCode]);
             //修改样式
             landInfo.style.backgroundColor = "#ccc";
             //设置一些判断值
@@ -88,12 +90,14 @@ class Register extends Component {
         }
     };
     //登陆判断
-    fall = () => {
-        let {code} = this.refs;
+    fall = async () => {
+        let {code,phone} = this.refs;
         let {check, verification} = this.state;
         //判断验证码是否在规定时间内输入完成
         if (!check && verification === code.value) {
             console.log("成功");
+            let codeNum = await postRegister(phone.value,code.value);
+            console.log(["登陆之后的验证码发送回来了",codeNum]);
             this.props.history.replace('/userInfo')
         } else {
             console.log("失败");

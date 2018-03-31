@@ -45,7 +45,6 @@ export default class Sort extends React.Component {
             <section className="navContainer">
                 <Header/>
                 <i className='iconfont icon-fanhui' onClick={()=>{history.goBack(-1)}}>
-
                 </i>
             </section>
             {/* 商品的分类*/}
@@ -73,7 +72,6 @@ export default class Sort extends React.Component {
             <SortList data={data}/>
             <SortList data={data}/>
             <SortList data={data}/>*/}
-
             <Switch>
                 <Route path='/detail/cake' component={ListFirst}></Route>
                 <Route path='/detail/cut' component={ListSecond}></Route>

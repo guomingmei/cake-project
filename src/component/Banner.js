@@ -28,7 +28,7 @@ import {withRouter} from 'react-router-dom'
     };
 
     render() {
-        console.log(this.props);
+
         let {history:{push}}=this.props;
         let {data, className, initSlide, auto, isFocus} = this.props;
         if (data.length === 0) {

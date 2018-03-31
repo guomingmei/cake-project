@@ -12,11 +12,15 @@ export function textDetail(){
     return axios.get('/api/community')
 }
 
-export let getCartDetail = () => {
-    return axios.get("/api/detail",{params:{type:"hot",goodsId:1}})
+export let getCartDetail = (item) => {
+    return axios.get("/api/detail",{params:item})
 };
 
 export let postRegister = (num,msg) => {
     return axios.post("/api/num",{num,msg})
+};
+///api/center
+export let getCenter = () => {
+   return axios.get("/api/center")
 };
 

@@ -3,6 +3,8 @@ import {querySort,ListSort} from "../../../api/sort"
 import "./sortDetail.less"
 import Header from "../../../component/Header";
 import CartTab from '../../../component/CartTab'
+import {Provider} from "react-redux"
+import store from "../../../store";
 export default class SortDetail extends React.Component {
     constructor() {
         super();
@@ -135,7 +137,11 @@ export default class SortDetail extends React.Component {
                 }
             </div>
             <section className='shopCart'>
-                <CartTab/>
+                <Provider store={store}>
+                    <div>
+                        <CartTab item={this.state.data}/>
+                    </div>
+                </Provider>
             </section>
         </div>:null)
     }

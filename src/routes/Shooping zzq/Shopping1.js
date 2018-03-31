@@ -5,7 +5,6 @@ import {Link} from "react-router-dom"
 import "./shopping.less"
 import Header from "../../component/Header";
 import action from "../../store/action/cartTab";
-import Nav from "../../component/Nav";
 
 class Shopping extends Component {
     constructor(props){
@@ -15,7 +14,7 @@ class Shopping extends Component {
 
     };
     render(){
-        let {history,goods,priceNum}=this.props;
+        let {history,goods}=this.props;
         return <div>
             <section className="navContainer">
                 <Header/>
@@ -74,30 +73,21 @@ class Shopping extends Component {
             </div>
             <div className="shop-flex">
                 <div className="shop-price">
-                    <h3>￥{
-                     // goods.reduce((prev,item)=>{
-                     //     console.log(prev,prev,item.price,item.num);
-                     //     return (prev.price?0:prev.price)*(prev.num?0:prev.num)+(item.price)*(item.num)
-                     // },0)
-                    priceNum
-                    }</h3>
+                    <h3>￥566.00</h3>
                     <p>商品</p>
                 </div>
                 <div className="deal">
                     下单
                 </div>
             </div>
-            <div>
-                <Nav/>
-            </div>
         </div>
     }
-    componentDidMount(){
-        if (this.props.judge){
-            //当添加商品的时候如果是相同的商品会数量加一而不是中数组中从新添加一个商品
-            this.props.promote(false)
-        }
-    }
+     componentDidMount(){
+          if (this.props.judge){
+              //当添加商品的时候如果是相同的商品会数量加一而不是中数组中从新添加一个商品
+              this.props.promote(false)
+          }
+     }
     add = (id) => {
         let {addGoodsId} = this.props;
         //获取方法当点击按钮的时候通过redux商品的数量加1
@@ -106,12 +96,12 @@ class Shopping extends Component {
     lesson = (id,num) => {
         let {removeGoodsId,deleteItem} = this.props;
         if (num===1){
-            //     当数量只有一个的时候中管理的redux中删除掉这个对象，让添加中购物车中的这款商品删除
+        //     当数量只有一个的时候中管理的redux中删除掉这个对象，让添加中购物车中的这款商品删除
             //这些方法比较复杂
             deleteItem(id);
         }else{
             //获取方法点击按钮当通过redux让商品的数量减一
-            removeGoodsId(id)
+           removeGoodsId(id)
         }
     }
 }
