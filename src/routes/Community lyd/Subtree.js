@@ -1,31 +1,30 @@
 import React from 'react'
 import './Subtree.less'
-import publiu from './pubuliu'
 
-const IMG_DATA = [
-    {
-        id: 1,
-        img: require("../../static/image/comment-1.png")
-    }, {
-        id: 2,
-        img: require("../../static/image/comment-2.png")
-    }, {
-        id: 3,
-        img: require("../../static/image/comment-3.png")
-    },{
-        id: 4,
-        img: require("../../static/image/comment-4.png")
-    }, {
-        id: 5,
-        img: require("../../static/image/comment-5.png")
-    }, {
-        id: 6,
-        img: require("../../static/image/comment-6.png")
-    },{
-        id: 7,
-        img: require("../../static/image/comment-7.png")
-    }
-];
+// const IMG_DATA = [
+//     {
+//         id: 1,
+//         img: require("../../static/image/comment-1.png")
+//     }, {
+//         id: 2,
+//         img: require("../../static/image/comment-2.png")
+//     }, {
+//         id: 3,
+//         img: require("../../static/image/comment-3.png")
+//     },{
+//         id: 4,
+//         img: require("../../static/image/comment-4.png")
+//     }, {
+//         id: 5,
+//         img: require("../../static/image/comment-5.png")
+//     }, {
+//         id: 6,
+//         img: require("../../static/image/comment-6.png")
+//     },{
+//         id: 7,
+//         img: require("../../static/image/comment-7.png")
+//     }
+// ];
 export default class Subtree extends React.Component {
     constructor() {
         super()
@@ -48,16 +47,16 @@ export default class Subtree extends React.Component {
                 }))
                 }}>树洞专区
                 </div>
-                <div className='cl sub'>⬅</div>
+                <div className='cl sub'>✖️</div>
                 <div className='iconfont icon-share cl extra'></div>
                 <div ref='flexWin' className='flexWin'>
                 </div>
                 <div className='connent'>
                     <img className='labelImg' src={require('../../static/image/label.png')} alt=""/>
                     <img className='no1Img' src={require('../../static/image/No1.png')} alt=""/>
-                    {IMG_DATA.map((item,index)=>{
+                   {/* {IMG_DATA.map((item,index)=>{
                         return <img className="imgData" key={index} src={item.img} alt=""/>
-                    })}
+                    })}*/}
                 </div>
             </div>
         </div>
