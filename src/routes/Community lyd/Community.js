@@ -1,9 +1,9 @@
 import React from 'react'
-import './community.less'
+import './community-1.less'
 import Mycom from '../../component/Mycom'
-import {Link} from 'react-router-dom'
-import {connect} from 'react-redux'
-class Community extends React.Component{
+// import {Link} from 'react-router-dom'
+// import {connect} from 'react-redux'
+export default class Community extends React.Component{
     constructor(){
         super()
         this.state={
@@ -25,13 +25,16 @@ class Community extends React.Component{
                     flag===2?'active':''
                 }>树洞</span>
             </div>
+            {/*树洞子页*/}
+            <div className='title'>
 
 
-            <span className='title'>3月1日</span>
-            <a href="/api/community"><Mycom/></a>
+            </div>
+            {/*21客志子页*/}
+            {/*<span className='title'>3月1日</span>*/}
+            {/*<a href="#"><Mycom/></a>*/}
 
         </div>
     }
 }
 
-export default connect()(Community)
