@@ -14,7 +14,8 @@ class Register extends Component {
     static defaultProps = {};
 
     render() {
- let {history}=this.props;
+        console.log(this.props);
+        let {history:{replace}}=this.props;
         let {check, second} = this.state;
         return <div className="register">
             <section className="navContainer">
@@ -60,7 +61,7 @@ class Register extends Component {
             setTimeout(() => {
                 code.value = phoneCode.verificat;
                 this.verification()
-            }, 10000);
+            }, 5000);
             this.timer = setInterval(() => {
                 let {second} = this.state;
                 //修改时间的值
@@ -80,7 +81,6 @@ class Register extends Component {
     verification = async () => {
         let {code, land} = this.refs;
         let {verification} = this.state;
-        console.log(verification, code.value);
         if (verification === code.value) {
             land.style.backgroundColor = "#866220";
         } else {
@@ -94,6 +94,7 @@ class Register extends Component {
         //判断验证码是否在规定时间内输入完成
         if (!check && verification === code.value) {
             console.log("成功");
+            this.props.history.replace('/userInfo')
         } else {
             console.log("失败");
         }

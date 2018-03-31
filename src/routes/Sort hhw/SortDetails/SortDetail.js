@@ -2,7 +2,7 @@ import React from "react"
 import {querySort,ListSort} from "../../../api/sort"
 import "./sortDetail.less"
 import Header from "../../../component/Header";
-
+import CartTab from '../../../component/CartTab'
 export default class SortDetail extends React.Component {
     constructor() {
         super();
@@ -134,6 +134,9 @@ export default class SortDetail extends React.Component {
                     })
                 }
             </div>
+            <section className='shopCart'>
+                <CartTab/>
+            </section>
         </div>:null)
     }
 }

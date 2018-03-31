@@ -6,7 +6,7 @@ export default class RoseCake extends Component{
         this.state={RoseData:[]}
     }
     async componentWillMount(){
-      let RoseData= await 
+      let RoseData= await
     }
     render(){
         return <div className='Rose'>
