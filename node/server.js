@@ -23,7 +23,7 @@ app.keys = ['abcd', 'efgh'];
 app.use(session(app))
 
 app.use(async(ctx, next) => {
-  ctx.set({'Access-Control-Allow-Origin': "http://localhost:3000", 'Access-Control-Allow-Credentials': true, 'Access-Control-Allow-Headers': "Content-Type,Content-Length,Authorization,Accept,X-Requested-With", 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS', 'X-Powered-By': '3.2.1'})
+  ctx.set({'Access-Control-Allow-Origin': "http://localhost:3000", 'Access-Control-Allow-Credentials': true, 'Access-Control-Allow-Headers': "Content-Type,Content-Length,Authorization,Accept,X-Requested-With,Cache-Control", 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS', 'X-Powered-By': '3.2.1'})
   if (ctx.method === 'OPTIONS') {
     ctx.response.body = {
       code: 0
@@ -36,16 +36,19 @@ const router = new Router
 
 router.get('/api/banner', async(ctx, next) => {
   let res = await common.readFile('./data/banner.json')
+  ctx.set('Cache-Control', 'max-age=300')
   ctx.body = res
 })
 
 router.get('/api/icon', async(ctx, next) => {
   let res = await common.readFile('./data/icon.json')
+  ctx.set('Cache-Control', 'max-age=300')
   ctx.body = res
 })
 
 router.get('/api/community', async(ctx, next) => {
   let res = await common.readFile('./data/community.json')
+  ctx.set('Cache-Control', 'max-age=300')
   ctx.body = res
 })
 
@@ -59,6 +62,7 @@ router.get('/api/detail', async(ctx, next) => {
   if (goodsId) {
     arr = arr.filter(item => item.goodsId == goodsId)
   }
+  ctx.set('Cache-Control', 'max-age=300')
   ctx.body = JSON.stringify(arr)
 })
 
