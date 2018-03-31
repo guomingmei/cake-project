@@ -609,5 +609,80 @@
       "is_default": true
     }],
     "imgArr": ["/uploads/design4-1.jpg", "/uploads/design4-2.jpg"]
+  },
+  {
+    "goodsId": 18,
+    "type": "cake",
+    "picUrl": "/uploads/cake3.jpg",
+    "title": "Four Different Flavored Cakes",
+    "smallTitle": "尽享小切块3+1组合",
+    "text": [],
+    "subtitleArr": ["巧克力","椰子","咖啡豆","芒果"],
+    "hotkeyArr": ["聚会"],
+    "price": "108",
+    "productArr": [{
+      "id": 1,
+      "size": "",
+      "suite_amount": "适合4人分享",
+      "booking_hour_limited": "5",
+      "cutlery_content": "含4套餐具",
+      "price": "108.00",
+      "spec": "3+1组合",
+      "pound": "3.00",
+      "has_spec_img": 1,
+      "img_url": "/uploads/cake3.jpg",
+      "is_default": true
+  }],
+    "imgArr": ["/uploads/cake3-1.jpg"]
+  },
+  {
+    "goodsId": 19,
+    "type": "cake",
+    "picUrl": "/uploads/cake4.jpg",
+    "title": "Six Different Flavored Cakes",
+    "smallTitle": "六口味切块",
+    "text": ["/21cake切块蛋糕/","/月销进入3万盒之际/","/增加单个切块蛋糕克重/","/使6口味切块的总克数接近一磅/"],
+    "subtitleArr": ["巧克力","坚果","咖啡豆","芒果"],
+    "hotkeyArr": ["聚会","新品"],
+    "price": "108",
+    "productArr": [{
+      "id": 1,
+      "size": "",
+      "suite_amount": "适合6人分享",
+      "booking_hour_limited": "5",
+      "cutlery_content": "含6套餐具",
+      "price": "198.00",
+      "spec": "6个（6种口味）",
+      "pound": "6.00",
+      "has_spec_img": 0,
+      "img_url": "",
+      "is_default": true
+  }],
+    "imgArr": ["/uploads/cake4-1.jpg"]
+  },
+  {
+    "goodsId": 20,
+    "type": "cut",
+    "picUrl": "/uploads/cut4.jpg",
+    "title": "Black and White Chocolate Mousse",
+    "smallTitle": "小切块-黑白巧克力慕斯",
+    "text": ["/巧克力弹奏的精巧和弦/","/一款无比动人的巧克力慕斯小蛋糕/","/口感冰凉细腻/","/白巧克力慕斯的甜，与底部黑巧克力酱的苦/"],
+    "subtitleArr": ["君度酒","比利时巧克力"],
+    "hotkeyArr": [],
+    "price": "36",
+    "productArr": [{
+      "id": 1,
+      "size": "5x5cm",
+      "suite_amount": "适合1人享用",
+      "booking_hour_limited": "6",
+      "cutlery_content": "含1套餐具",
+      "price": "36.00",
+      "spec": "块",
+      "pound": "0.00",
+      "has_spec_img": 0,
+      "img_url": "",
+      "is_default": true
+  }],
+    "imgArr": ["/uploads/cut4-1.jpg"]
   }
 ]
