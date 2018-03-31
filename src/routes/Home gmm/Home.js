@@ -16,7 +16,7 @@ export default class Home extends Component{
         let homeData=await homeDetail();
         let  homeList=await textDetail();
 
-        console.log(homeList);
+
         this.setState({bannerData:data,homeData,homeList});
     }
     render(){
@@ -62,7 +62,7 @@ export default class Home extends Component{
                            <p className='textFirst'>{item.smallTitle}<span className='price'>{item.price}</span><span className='weight'>元/2.0磅</span></p>
                            <p className='textSecond'>{item.subtitleArr
 
-                           }<a href=""><i className='iconfont icon-gouwuche1'></i></a></p>
+                           }<span href=""><i className='iconfont icon-gouwuche1'></i></span></p>
 
                        </Link>
 
@@ -98,8 +98,8 @@ export default class Home extends Component{
         <ul>
             {
                 this.state.homeList.map((item,index)=>{
-                  return  <a href="" key={index}>
-                        <li><img src={item.picUrl} alt=""/></li>
+                  return  <a href="javascript:;" key={index}>
+                        <li><img src={`http://localhost:8080${item.picUrl}`} alt=""/></li>
                         <p>{item.title}</p>
                     </a>
                 })

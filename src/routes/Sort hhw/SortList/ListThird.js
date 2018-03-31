@@ -29,7 +29,7 @@ export default class ListThird extends React.Component {
                             return <li key={index}>
                                 <NavLink to={`/SortDetail?type=${item.type}&goodsId=${item.goodsId}`} data={data[index]}>
                                     <div className="list-pro-content">
-                                        <a href="" title="庞贝">
+                                        <span title="庞贝">
                                             <div className="label">
                                                 <img
                                                     src="http://m.21cake.com/upload/images/1e22720bd656f7bac246159010c7e1f4.png"/>
@@ -43,10 +43,10 @@ export default class ListThird extends React.Component {
                                             </h3>
                                             <span className="price">¥{item.productArr[0].price}/个</span>
 
-                                        </a>
-                                        <a href="javascript:;" className="cart-add" name="cart-add_728" data-id="728" style={{color:'#442818'}}>
+                                        </span>
+                                        <span href="javascript:;" className="cart-add" name="cart-add_728" data-id="728" style={{color:'#442818'}}>
                                             <i className='iconfont icon-gouwuche' style={{color:'UserInfo',fontSize:'.2rem',fontWeight:'bold'}}></i>
-                                        </a>
+                                        </span>
                                     </div>
                                 </NavLink>
                             </li>

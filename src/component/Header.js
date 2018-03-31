@@ -6,7 +6,7 @@ export default class Header extends Component{
     render(){
         return <div className='head'>
             <a href="">
-                <img src={require('../static/image/logo.png')} alt=""/>
+                <img src={`http://localhost:8080/favicon.ico`} alt=""/>
             </a>
         </div>
     }

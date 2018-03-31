@@ -18,12 +18,11 @@ export default class SortDetail extends React.Component {
         search.replace(reg,function(){
             obj[arguments[1]] = arguments[2];
         });
-        console.log(obj);
+
         let data = await ListSort(obj.type,obj.goodsId);
 
         this.setState({data});
-        console.log(data);
-        console.log(1);
+
     }
     /*componentWillReceiveProps(nextState){
 
@@ -31,7 +30,7 @@ export default class SortDetail extends React.Component {
 
     render() {
         let {history}=this.props;
-        console.log(this.props);
+
         return (this.state.data.length? <div className="container">
 
 
@@ -96,9 +95,9 @@ export default class SortDetail extends React.Component {
                         </ul>
                     </div>
                     <ul className="store-info">
-                        <li>
-                            <img src="http://static.21cake.com//themes/wap/img/fresh.png" alt="保鲜条件"/>
-                            <span>保鲜条件</span>
+                        <li style={{position:'relative'}}>
+                            <i className='iconfont icon-icon-test' style={{position:'absolute',left:'.13rem'}}></i>
+                            <span style={{marginLeft:'.3rem'}}>保鲜条件</span>
                             <div><p>0－4℃保藏12小时，5℃食用为佳</p></div>
                         </li>
                         <li data-sweet="3" id="sweetList">

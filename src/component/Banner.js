@@ -46,7 +46,6 @@ export default class Banner extends Component{
                         }
                     }}>
             {data.map((item, index) => {
-                console.log(item);
                 return <div key={index}>
                     <Link to={`/SortDetail?type=hot&goodsId=${item.goodsId}`}>
 
