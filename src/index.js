@@ -14,6 +14,7 @@ import Sort from "./routes/Sort hhw/Sort";
 import Community from "./routes/Community lyd/Community";
 import UserInfo from './routes/User zzq/UserInfo'
 import SortDetail from "./routes/Sort hhw/SortDetails/SortDetail";
+import RoseCake from "./component/banner/RoseCake";
 
 let element = (
     <Provider store={store}>
@@ -23,6 +24,7 @@ let element = (
                 {/*<Shopping/>*/}
                 <Route path="/" exact component={Home}/>
                 <Route path="/home" component={Home}/>
+                <Route path="/roseCake/:id?" component={RoseCake}/>
                 <Route path="/detail"  component={Sort}/>
                 {/*<Route path="/cakeDetail"  component={SortDetail}/>*/}
                 <Route path="/SortDetail"  component={SortDetail}/>

@@ -3,8 +3,8 @@ import ReactSwipe from 'react-swipe';
 import './banner.less'
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-
-export default class Banner extends Component{
+import {withRouter} from 'react-router-dom'
+ class Banner extends Component{
     constructor(props){
         super(props);
         this.state={step:props.initSlide,
@@ -28,6 +28,8 @@ export default class Banner extends Component{
     };
 
     render() {
+        console.log(this.props);
+        let {history:{push}}=this.props;
         let {data, className, initSlide, auto, isFocus} = this.props;
         if (data.length === 0) {
             return null;
@@ -35,6 +37,7 @@ export default class Banner extends Component{
         //=>没有数据的时候我们不渲染REACT-SWIPE,有数据在渲染
 
         return (<div className="bannerBox">
+
         <ReactSwipe className={className}
                     swipeOptions={{
                         startSlide: initSlide,
@@ -47,9 +50,12 @@ export default class Banner extends Component{
                     }}>
             {data.map((item, index) => {
                 return <div key={index}>
-                    <Link to={`/SortDetail?type=hot&goodsId=${item.goodsId}`}>
+                    <div onClick={()=>{
 
-                        <img src={`http://localhost:8080${item.picUrl}`} alt=""/></Link>
+                        push(`/roseCake/${index}`);
+                    } }>
+
+                        <img src={`http://localhost:8080${item.picUrl}`} alt=""/></div>
                 </div>;
             })}
         </ReactSwipe>
@@ -64,3 +70,4 @@ export default class Banner extends Component{
     </div>);
     }
 }
+export default withRouter(Banner)
